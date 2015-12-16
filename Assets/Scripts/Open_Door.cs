@@ -16,7 +16,7 @@ public class Open_Door : MonoBehaviour
       
         door_position_temp = new Vector3(transform.position.x, transform.position.y + 12.0f, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, door_position_temp, 5.0f * Time.deltaTime);
-        Debug.Log("Pierdolnalem");
+       // Debug.Log("Pierdolnalem");
 
     }
 
@@ -24,8 +24,8 @@ public class Open_Door : MonoBehaviour
     {
         
         transform.position = door_position;
-        Debug.Log("Opuscilem Collider");
-        Debug.Log(door_position);
+       // Debug.Log("Opuscilem Collider");
+        //Debug.Log(door_position);
         
     }
 }

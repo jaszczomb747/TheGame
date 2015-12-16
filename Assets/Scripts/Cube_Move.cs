@@ -20,6 +20,8 @@ public class Cube_Move : MonoBehaviour
 
         r.MovePosition(transform.position + transform.forward * forward * Time.deltaTime * speed);
         Quaternion deltaRotation = Quaternion.Euler(eulerAngleVelocity * Time.deltaTime * rotation_speed);
+
+     
         r.MoveRotation(r.rotation * deltaRotation);
     }
 }
